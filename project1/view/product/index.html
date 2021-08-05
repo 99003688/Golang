@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+        <titlle>Product list</titlle>
+        
+    </head>
+
+    <body>
+        <h3>Product List</h3>
+       
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+            {{range .product}}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.Name}}</td>
+                <td>{{.Price}}</td>
+                <td>{{.Quantity}}</td>
+                <td>{{.Description}}</td>
+                <td>Edit | Delete</td>
+
+                
+            </tr>
+            
+            {{end}}
+        </table>
+
+        <a  href="/product/add">ADD</a>
+    </body>
+</html>

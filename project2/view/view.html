@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>User info</title>
+</head>
+<body>
+	{{range .Response}}
+	<div><h3> Date:{{.Date}} </h3></div>
+	<div> State:{{ .State }}</div>
+	<div> Positive:{{ .Positive }} </div>
+	<div> ProbableCases:{{ .ProbableCases }}</div>
+	<div> Negative:{{ .Negative }} </div>
+	<div> TotalTestResults:{{ .TotalTestResults }} </div>
+	<div> Recovered:{{ .Recovered }} </div>
+	<div> LastUpdateEt:{{ .LastUpdateEt}}</div>
+	<div> DateModified:{{ .DateModified }} </div>
+	<div> Death:{{ .Death }} </div>
+	<div> Hospitalized:{{ .Hospitalized }} </div>
+	<div> DeathConfirmed:{{ .DeathConfirmed }} </div>
+
+
+</body>
+</html>
+   
