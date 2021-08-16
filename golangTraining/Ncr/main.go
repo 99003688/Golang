@@ -4,24 +4,24 @@ import (
 	"fmt"
 )
 
-func fact(n int) int {
-	var res int = 1
-	for i := 2; i <= n; i++ {
-		res = res * i
+func factorial(number int) int {
+	var result int = 1
+	for i := 2; i <= number; i++ {
+		result = result * i
 	}
-	return res
+	return result
 
 }
 
-func nCr(n int, r int) int {
-	return fact(n) / (fact(r) * fact(n-r))
+func combination(num1 int, num2 int) int {
+	return factorial(num1) / (fact(num2) * fact(num1-num2))
 }
 
 func main() {
-	var n, r int
+	var num1, num2 int
 	fmt.Println("Enter the value of n and r")
-	fmt.Scanln(&n)
-	fmt.Scanln(&r)
-	fmt.Println(nCr(n, r))
+	fmt.Scanln(&num1)
+	fmt.Scanln(&num2)
+	fmt.Println(combination(num1, num2))
 
 }
